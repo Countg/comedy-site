@@ -892,6 +892,10 @@ a {
   .latest-promo {
     width: 95%;
   }
+
+  .album-description h1 {
+    line-height: 30px;
+  }
   .line-guys span {
     font-size: 1em;
   }
@@ -976,25 +980,47 @@ a {
   transform: translate(0, -50%);
 }
 
-@media (min-width: 200px) and (max-width: 1023px) {
+@media (min-width: 200px) and (max-width: 799px) {
   @keyframes marquee {
     0% {
       left: 0;
     }
     100% {
-      left: -100%;
+      left: -300%;
     }
   }
   .animate {
-    width: 400%;
+    width: 900%;
     animation: marquee 20s linear infinite;
     top: 50%;
     transform: translate(0, -50%);
   }
 
   .top-swiper h2 {
-    font-size: 5em;
-    transform: scaleY(4);
+    font-size: 2em;
+    transform: scaleY(8);
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1023) {
+  @keyframes marquee {
+    0% {
+      left: 0;
+    }
+    100% {
+      left: -200%;
+    }
+  }
+  .animate {
+    width: 500%;
+    animation: marquee 20s linear infinite;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  .top-swiper h2 {
+    font-size: 6em;
+    transform: scaleY(8);
   }
 }
 
@@ -1575,6 +1601,12 @@ a.ticket-btn:hover {
   .touring {
     width: 45%;
     height: 100%;
+  }
+}
+
+@media (max-width: 1025px) and (min-width: 800px) {
+  .touring h3 {
+    line-height: 30px;
   }
 }
 
