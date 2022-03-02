@@ -41,16 +41,18 @@ a {
 }
 
 .photo-header {
+  max-width: 100%;
+  margin: 0 auto;
+  color: white;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: linear-gradient(
       to bottom,
       rgb(73, 192, 237, 0.7),
       rgb(10, 10, 42, 0.8)
     ),
     url('/images/Gavin\ Stephens-blue.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  height: 100%;
 }
 
 .fade-in {
@@ -79,16 +81,18 @@ a {
 
 @media only screen and (min-device-width: 700px) and (max-device-width: 1025px) and (-webkit-min-device-pixel-ratio: 2) {
   .photo-header {
+    max-width: 100%;
+    margin: 0 auto;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: linear-gradient(
         to bottom,
         rgb(73, 192, 237, 0.7),
         rgb(10, 10, 42, 0.8)
       ),
       url('/images/Gavin\ Stephens-blue.jpg');
-    background-size: contain;
-    background-attachment: fixed;
-
-    background-repeat: no-repeat;
   }
 
   @-webkit-keyframes fade-in {
@@ -112,16 +116,18 @@ a {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 699px) and (-webkit-min-device-pixel-ratio: 2) {
   .photo-header {
+    max-width: 100%;
+    margin: 0 auto;
+    color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: linear-gradient(
         to bottom,
         rgb(73, 192, 237, 0.7),
         rgb(10, 10, 42, 0.8)
       ),
       url('/images/Gavin\ Stephens-blue.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-
-    background-repeat: no-repeat;
   }
 
   @-webkit-keyframes fade-in {
