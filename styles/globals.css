@@ -52,7 +52,7 @@ a {
       rgb(73, 192, 237, 0.7),
       rgb(10, 10, 42, 0.8)
     ),
-    url('/images/Gavin\ Stephens-blue.jpg');
+    url('/images/GavinStephens-blue.jpg');
 }
 
 .fade-in {
@@ -92,7 +92,7 @@ a {
         rgb(73, 192, 237, 0.7),
         rgb(10, 10, 42, 0.8)
       ),
-      url('/images/Gavin\ Stephens-blue.jpg');
+      url('/images/GavinStephens-blue.jpg');
   }
 
   @-webkit-keyframes fade-in {
@@ -127,7 +127,7 @@ a {
         rgb(73, 192, 237, 0.7),
         rgb(10, 10, 42, 0.8)
       ),
-      url('/images/Gavin\ Stephens-blue.jpg');
+      url('/images/GavinStephens-blue.jpg');
   }
 
   @-webkit-keyframes fade-in {
