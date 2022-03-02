@@ -16,8 +16,7 @@ export default function PodcastPage() {
   return (
     <Layout
       title='Gavin Stephens - Uncolonized Podcast'
-      description='Gavin Stephens CTV, CBC, is one of the hosts of Uncolonized Podcast. Check out the latest episode here, or stream on itunes, spotify and any where you download podcasts.'
-      image='/images/Pink MoodCollageInstagramPost.png'>
+      description='Gavin Stephens CTV, CBC, is one of the hosts of Uncolonized Podcast. Check out the latest episode here, or stream on itunes, spotify and any where you download podcasts.'>
       <div className='podcast-page'>
         <Podcast overlayToggle={overlayToggle} />
         <Navigation />
