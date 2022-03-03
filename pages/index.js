@@ -7,7 +7,7 @@ import Latest from '../Components/Latest';
 import TourDates from '../Components/Touring/TourDates';
 import ScrollSlider from '../Components/Scroll';
 
-export default function Home({ posts }) {
+export default function Home({ currentPosts }) {
   return (
     <Layout title='Gavin Stephens - Home'>
       <Header />
@@ -15,7 +15,7 @@ export default function Home({ posts }) {
       <SmallNavigation />
       <Latest />
       <ScrollSlider />
-      <TourDates posts={posts} />
+      <TourDates posts={currentPosts} />
     </Layout>
   );
 }
@@ -36,9 +36,14 @@ export async function getStaticProps() {
   const res = await fetch(finalURL);
   const posts = await res.json();
 
+  const today = new Date().getTime();
+  const currentPosts = posts.items.filter((items) => {
+    return new Date(items.end.dateTime).getTime() > today;
+  });
+
   return {
     props: {
-      posts,
+      currentPosts,
     },
   };
 }
