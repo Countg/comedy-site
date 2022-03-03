@@ -6,7 +6,7 @@ export default function TourDates({ posts }) {
     <div className='tour-dates' id='touring'>
       <div className='touring-event'>
         <h2>TOUR DATES</h2>
-        {posts.items === 0 ? (
+        {posts.length === 0 ? (
           <h2
             style={{
               color: '#09f7ea',
