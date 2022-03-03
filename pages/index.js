@@ -6,8 +6,10 @@ import SmallNavigation from '../Components/Navigation/SmallNavigation';
 import Latest from '../Components/Latest';
 import TourDates from '../Components/Touring/TourDates';
 import ScrollSlider from '../Components/Scroll';
+import { useEvent } from '../providers/EventProvider';
 
-export default function Home({ currentPosts }) {
+export default function Home() {
+  const { events } = useEvent();
   return (
     <Layout title='Gavin Stephens - Home'>
       <Header />
@@ -15,35 +17,7 @@ export default function Home({ currentPosts }) {
       <SmallNavigation />
       <Latest />
       <ScrollSlider />
-      <TourDates posts={currentPosts} />
+      <TourDates posts={events} />
     </Layout>
   );
-}
-
-export async function getStaticProps() {
-  const { NEXT_PUBLIC_CALENDAR_API, NEXT_PUBLIC_CALENDAR_ID } = process.env;
-
-  const BASEPARAMS = `orderBy=startTime&singleEvents=true&timeMin=${new Date().toISOString()}`;
-  const BASEURL = `https://www.googleapis.com/calendar/v3/calendars/${NEXT_PUBLIC_CALENDAR_ID}/events?${BASEPARAMS}`;
-
-  const HEADERS = {
-    'Content-Type': 'application/json',
-    'Access-Control-Allow-Methods': 'GET',
-  };
-
-  const finalURL = `${BASEURL}&key=${NEXT_PUBLIC_CALENDAR_API}`;
-
-  const res = await fetch(finalURL);
-  const posts = await res.json();
-
-  const today = new Date().getTime();
-  const currentPosts = posts.items.filter((items) => {
-    return new Date(items.end.dateTime).getTime() > today;
-  });
-
-  return {
-    props: {
-      currentPosts,
-    },
-  };
 }
