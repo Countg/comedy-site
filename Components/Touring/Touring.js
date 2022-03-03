@@ -9,7 +9,7 @@ const Touring = ({ events }) => {
     <>
       {events.map((item) => (
         <div className='touring' key={item.id}>
-          <p>{item.location.toUpperCase()}</p>
+          <p>{item.location}</p>
           <h3>{item.summary.toUpperCase()}</h3>
           <h4>{moment(item.start.dateTime).format('dddd MMM Do YYYY')}</h4>
           <p>{moment(item.start.dateTime).format('LT')}</p>
