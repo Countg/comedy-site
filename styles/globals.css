@@ -1329,13 +1329,17 @@ button {
   background-color: #09f7ea; /* Green */
   border: none;
   color: #dd219e;
-
+  cursor: pointer;
   margin: 0 0.5em;
   padding: 10px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+
+button:hover {
+  opacity: 50%;
 }
 
 .email-input {

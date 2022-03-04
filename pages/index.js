@@ -7,7 +7,7 @@ import Latest from '../Components/Latest';
 import TourDates from '../Components/Touring/TourDates';
 import ScrollSlider from '../Components/Scroll';
 
-export default function Home({ currentPosts }) {
+export default function Home({ posts }) {
   return (
     <Layout title='Gavin Stephens - Home'>
       <Header />
@@ -15,7 +15,7 @@ export default function Home({ currentPosts }) {
       <SmallNavigation />
       <Latest />
       <ScrollSlider />
-      <TourDates posts={currentPosts} />
+      <TourDates posts={posts} />
     </Layout>
   );
 }
@@ -36,20 +36,9 @@ export async function getServerSideProps(context) {
   const res = await fetch(finalURL);
   const posts = await res.json();
 
-  const today = new Date().getTime();
-  const currentPosts = posts.items.filter((items) => {
-    return new Date(items.end.dateTime).getTime() > today;
-  });
-
-  if (!currentPosts) {
-    return {
-      notFound: true,
-    };
-  }
-
   return {
     props: {
-      currentPosts,
+      posts,
     },
   };
 }

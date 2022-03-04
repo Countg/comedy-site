@@ -7,7 +7,7 @@ import { isDate } from 'moment';
 const Touring = ({ events }) => {
   return (
     <>
-      {events.map((item) => (
+      {events.items.map((item) => (
         <div className='touring' key={item.id}>
           <p>{item.location}</p>
           <h3>{item.summary.toUpperCase()}</h3>
