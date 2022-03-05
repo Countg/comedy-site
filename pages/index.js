@@ -20,7 +20,7 @@ export default function Home({ posts }) {
   );
 }
 
-export async function getServerSideProps(context) {
+export async function getServerSideProps() {
   const { NEXT_PUBLIC_CALENDAR_API, NEXT_PUBLIC_CALENDAR_ID } = process.env;
 
   const BASEPARAMS = `orderBy=startTime&singleEvents=true&timeMin=${new Date().toISOString()}`;
