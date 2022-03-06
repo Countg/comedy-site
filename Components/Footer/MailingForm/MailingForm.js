@@ -28,7 +28,9 @@ export default function MailingForm({
       <button onClick={submit} className='mailchimp-button'>
         SUBMIT
       </button>
-      {status === 'sending' && <div style={{ color: 'blue' }}>sending...</div>}
+      {status === 'sending' && (
+        <div style={{ color: '#09f7ea' }}>sending...</div>
+      )}
       {status === 'error' && (
         <div
           style={{ color: 'orange' }}
@@ -37,7 +39,7 @@ export default function MailingForm({
       )}
       {status === 'success' && (
         <div
-          style={{ color: 'yellow' }}
+          style={{ color: '#FF1493' }}
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
