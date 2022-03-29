@@ -691,11 +691,12 @@ a {
   margin: 1em auto;
   display: grid;
   grid-gap: 3em;
+
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr min-content;
   grid-template-areas:
-    'album description'
-    'album music';
+    'album album description '
+    'album album music';
 }
 
 .album-cover {
@@ -719,8 +720,9 @@ a {
 
 .album-description {
   grid-area: description;
-  text-align: left;
-  line-height: 60%;
+  padding-top: 2em;
+  text-align: center;
+  line-height: 10%;
   display: block;
 }
 
@@ -728,8 +730,12 @@ a {
   display: none;
 }
 
+.album-description h1 {
+  font-size: clamp(1rem, 10vw, 1.2rem);
+}
+
 .album-description h2 {
-  font-size: clamp(2rem, 1rem + 5vw, 5rem);
+  font-size: clamp(1.5rem, 10vw, 3rem);
 
   text-transform: uppercase;
   color: #09f7ea;
@@ -761,7 +767,7 @@ a {
 }
 
 .font-music {
-  text-align: left;
+  text-align: center;
   grid-area: music;
 }
 
@@ -855,7 +861,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1094px) {
   .latest-promo {
     width: 90%;
     grid-gap: 0.5em;
