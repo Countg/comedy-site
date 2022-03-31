@@ -9,7 +9,7 @@ export default function Layout({ children, ...customMeta }) {
   const meta = {
     title: 'Gavin Site',
     description: `This is the website of comedian Gavin Stephens.Juno Nominee CBC, and Just For Laughs artist `,
-    image: '/images/GavinStephensPurps.jpg',
+    image: '/GavinStephensPurps@2x.png',
     type: 'website',
     ...customMeta,
   };

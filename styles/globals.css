@@ -686,17 +686,13 @@ a {
 
 .latest-promo {
   width: 70%;
+
   color: white;
   padding: 0.8em 0;
-  margin: 1em auto;
+  margin: 3em auto;
   display: grid;
-  grid-gap: 3em;
-
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr min-content;
-  grid-template-areas:
-    'album album description '
-    'album album music';
+  grid-gap: 1em;
+  grid-template-columns: 1.5fr 1fr;
 }
 
 .album-cover {
@@ -706,7 +702,7 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   clip-path: polygon(1% 0, 100% 0%, 75% 100%, 1% 100%);
-  grid-area: album;
+
   outline: 1px solid #dd219e;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.02),
     0 6.7px 5.3px rgba(0, 0, 0, 0.028), 0 12.5px 10px rgba(0, 0, 0, 0.035),
@@ -719,10 +715,9 @@ a {
 }
 
 .album-description {
-  grid-area: description;
   padding-top: 2em;
   text-align: center;
-  line-height: 10%;
+  line-height: 60%;
   display: block;
 }
 
@@ -735,7 +730,7 @@ a {
 }
 
 .album-description h2 {
-  font-size: clamp(1.5rem, 10vw, 3rem);
+  font-size: clamp(1.2rem, 10vw, 3.2em);
 
   text-transform: uppercase;
   color: #09f7ea;
@@ -874,9 +869,11 @@ a {
   }
   .album-cover {
     clip-path: none;
+    grid-area: album;
   }
   .album-description {
     text-align: center;
+    grid-area: description;
   }
 
   .album-description h1 {

@@ -36,8 +36,7 @@ export default function Latest() {
             : 'hide-album-description'
         }>
         <h1>THE NEW JUNO NOMINATED ALBUM:</h1>
-        <h2>All Inclusive</h2>
-        <h2>Coma</h2>
+        <h2>All inclusive</h2> <h2>Coma</h2>
         <div className='line-guys'>
           <p>Available on:</p>
           <a
@@ -48,7 +47,6 @@ export default function Latest() {
             <span>HOWL & ROAR RECORDS</span>
           </a>
         </div>
-
         <div className={inView ? 'font-music fadeInBottom delay13' : ''}>
           <a
             href='https://music.apple.com/ca/album/all-inclusive-coma/1540202802'
