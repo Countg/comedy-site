@@ -15,7 +15,7 @@ export default function Home({ posts }) {
       <SmallNavigation />
       <Latest />
       <ScrollSlider />
-      {/* <TourDates posts={posts} /> */}
+      <TourDates posts={posts} />
     </Layout>
   );
 }
