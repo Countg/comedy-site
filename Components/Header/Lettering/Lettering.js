@@ -8,8 +8,8 @@ export default function Lettering() {
       <div className='header-container'>
         <h1>
           <div className='hide-text-container'>
-            <div class=' animate-letters delay04'>GAVIN STEPHENS</div>
-            <div class=' on-hover-first animate-letters delay08'>
+            <div className=' animate-letters delay04'>GAVIN STEPHENS</div>
+            <div className=' on-hover-first animate-letters delay08'>
               <Link
                 href='https://www.youtube.com/watch?v=QZXFz-BLy_I'
                 target='_blank'
@@ -17,11 +17,11 @@ export default function Lettering() {
                 <div className='comedian-label'></div>
               </Link>
             </div>
-            <div class=' on-hover-first animate-letters delay10'>
+            <div className=' on-hover-first animate-letters delay10'>
               <a href='/about' className='bio-label'></a>
             </div>
 
-            <div class='on-hover-first animate-letters delay12'>
+            <div className='on-hover-first animate-letters delay12'>
               <a href='/uncolonized' className='pod-label'></a>
             </div>
 

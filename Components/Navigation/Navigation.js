@@ -28,11 +28,12 @@ export default function Navigation(props) {
                   : '/images/GavinStephensPurps.jpg'
               }
               alt="Gavin's logo"
+              loading='lazy'
             />
           </a>
 
           <ul className='main-menu'>
-            <li class='main-item'>
+            <li className='main-item'>
               <a href='/'>HOME</a>
             </li>
 

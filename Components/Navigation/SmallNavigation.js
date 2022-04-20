@@ -35,7 +35,7 @@ const SmallNavigation = () => {
               alt="Gavin's logo"
             />
           </a>
-          <ul class={!show ? 'nav-menu' : 'nav-menu active'}>
+          <ul className={!show ? 'nav-menu' : 'nav-menu active'}>
             <div className='nav-text'>
               <a href='/'>
                 <h2 className='site-text'>HOME.</h2>
