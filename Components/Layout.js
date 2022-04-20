@@ -8,7 +8,7 @@ export default function Layout({ children, ...customMeta }) {
   const router = useRouter();
   const meta = {
     title: 'Gavin Site',
-    description: `This is the website of comedian Gavin Stephens.Juno Nominee CBC, and Just For Laughs artist `,
+    description: `This is the website of comedian, writer & podcast host, Gavin Stephens. Juno Nominee CBC, and Just For Laughs artist. He can be seen touring all over Canada, The U.S & U.K `,
     image: '/GavinStephensPurps@2x.png',
     type: 'website',
     ...customMeta,
