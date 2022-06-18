@@ -31,8 +31,8 @@ export default function Footer() {
           <h2>CONTACT</h2>
 
           <p>For booking & inquires:</p>
-          <a href='mailto:bookings@gavinstephens.ca' target='_blank'>
-            <p className='email-link'>bookings@gavinstephens.ca</p>
+          <a href='mailto:info@gavinstephens.ca' target='_blank'>
+            <p className='email-link'>info@gavinstephens.ca</p>
           </a>
         </div>
 
