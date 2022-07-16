@@ -5,28 +5,31 @@ import moment from 'moment';
 import { isDate } from 'moment';
 
 const Touring = ({ events }) => {
+  console.log(events);
   return (
     <>
-      {events.items.map((item) => (
+      {events.map((item) => (
         <div className='touring' key={item.id}>
-          {!item.location ? (
+          {!item.venue.location ? (
             <p>Check back for Location</p>
           ) : (
-            <p>{item.location}</p>
+            <p>
+              {item.venue.city}, {item.venue.region}
+            </p>
           )}
 
-          {item.summary ? (
-            <h3>{item.summary.toUpperCase()}</h3>
+          {item.title ? (
+            <h3>{item.title.toUpperCase()}</h3>
           ) : (
             <h3>COMEDY SHOW</h3>
           )}
 
-          <h4>{moment(item.start.dateTime).format('dddd MMM Do YYYY')}</h4>
-          <p>{moment(item.start.dateTime).format('LT')}</p>
+          <h4>{moment(item.datetime).format('dddd MMM Do YYYY')}</h4>
+          <p>{moment(item.starts_at).format('LT')}</p>
           <a
-            href={item.description}
+            href={item.url}
             target='_blank'
-            title={`Comedy show @ ${item.summary} ${item.location}`}
+            title={`Comedy show @ ${item.title} ${item.location}`}
             className='ticket-btn bouncy'>
             TICKETS
           </a>
