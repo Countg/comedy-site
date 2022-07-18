@@ -22,22 +22,22 @@ export default function About() {
             <h2>STEPHENS</h2>
             <hr />
             <p>
-              Gavin is a stand-up comedian who skillfully balances playful irony
-              and morbid silliness; he is known for his (really) quick wit and
-              stream of consciousness comedic style. Gavin has been featured in
-              Montreal, & Toronto’s Just For Laughs Festivals. As well as the
-              Cape Town Comedy fest, and Austin’s SXSW, alongside comedy legends
-              Margaret Cho, Janeane Garofalo, Andy Kindler, Reggie Watts,
-              Hannibal Buress and Marc Maron.
+              Gavin Stephens is a stand-up comedian who skillfully balances
+              playful irony and morbid silliness; he is known for his (really)
+              quick wit and stream of consciousness comedic style. Gavin has
+              been featured in Montreal’s Just For Laughs and Austin’s SXSW,
+              alongside comedy legends Margaret Cho, Janeane Garofalo, Andy
+              Kindler, Reggie Watts, Hannibal Buress and Marc Maron. He has been
+              named one of the “10 Funniest Canadians” by E! Network and chosen
+              as “Best Local Stand-up Comic” in NOW Magazine’s Readers Choice
+              poll. Gavin has been recently nominated for a Juno award, for his
+              latest Album “All Inclusive Coma” available on Howl & Roar
+              records. <br />
               <br />
-              <br /> He has been named one of the “10 Funniest Canadians” by
-              StarTV and chosen as “Best Local Stand-up Comic” in NOW Magazine’s
-              Readers Choice poll. He’s appeared on CTV and the Comedy Network
-              in The Buzz, Comedy Inc., and on CBC’s Debaters and The Baroness
-              Von Sketch Show. When he’s not performing or hosting the
-              Uncolonized podcast, he can be found practicing his knitting or
-              cheering on the Raptors. His perfect day includes watching
-              cartoons, reading comic books and watching indie wrestling.
+              When he’s not performing or hosting the comedic leftist podcast,
+              Uncolonized, he can be found practicing his knitting or cheering
+              on the Raptors. His perfect day includes watching cartoons,
+              reading comic books and watching indie wrestling.
             </p>
             <div className='button-links'>
               <Link href='https://photos.app.goo.gl/ZRbBUWwYVn31Q7s99'>
