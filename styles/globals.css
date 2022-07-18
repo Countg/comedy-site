@@ -1418,6 +1418,24 @@ button:hover {
   text-shadow: 2px 3px #dd219e;
 }
 
+.touring-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.touring-title button {
+  padding: 0.1em 1em;
+  margin: 2em 2em;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.touring-title p {
+  padding: 0 0.5em;
+  font-weight: 500;
+}
+
 .touring-event {
   top: 0;
   left: 0;

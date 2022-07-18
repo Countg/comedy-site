@@ -5,7 +5,6 @@ import moment from 'moment';
 import { isDate } from 'moment';
 
 const Touring = ({ events }) => {
-  console.log(events);
   return (
     <>
       {events.map((item) => (
