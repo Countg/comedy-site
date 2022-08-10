@@ -9,7 +9,9 @@ export default function TourDates({ posts }) {
       <div className='touring-event'>
         <h2>TOUR DATES</h2>
 
-        {posts === 0 ? (
+        {!posts ? (
+          <h2>Loading</h2>
+        ) : posts === 0 ? (
           <h2
             style={{
               color: '#09f7ea',
