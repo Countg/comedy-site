@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import SocialNav from './Navigation/Social/Social';
 import Footer from './Footer/Footer';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+
 import { useRouter } from 'next/router';
 
 export default function Layout({ children, ...customMeta }) {
