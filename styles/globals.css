@@ -1116,10 +1116,16 @@ a {
 .email-link {
   font-size: 1.5rem;
   color: #09f7ea;
+  transition: 0.5s;
+  transform: rotate(0deg);
+  filter: opacity(50%);
 }
 
 .email-link:hover {
-  opacity: 50%;
+  transform: rotate(-5deg) scale(1.2);
+  border-radius: 5px;
+  filter: opacity(100%);
+  font-style: bold;
 }
 .login {
   grid-area: login;
