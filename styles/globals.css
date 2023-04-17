@@ -1116,6 +1116,9 @@ a {
 .email-link {
   font-size: 1.5rem;
   color: #09f7ea;
+  cursor: pointer;
+  width: 72%;
+
   transition: 0.5s;
   transform: rotate(0deg);
   filter: opacity(50%);
@@ -1124,7 +1127,9 @@ a {
 .email-link:hover {
   transform: rotate(-5deg) scale(1.2);
   border-radius: 5px;
+  background-color: #dd219e;
   filter: opacity(100%);
+  padding: 0.4em 0.4em 0.4em 0.4em;
   font-style: bold;
 }
 .login {
