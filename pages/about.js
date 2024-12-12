@@ -22,17 +22,17 @@ export default function About() {
             <h2>STEPHENS</h2>
             <hr />
             <p>
-              Gavin Stephens is a stand-up comedian who skillfully balances
-              playful irony and morbid silliness; he is known for his (really)
-              quick wit and stream of consciousness comedic style. Gavin has
-              been featured in Montreal’s Just For Laughs and Austin’s SXSW,
-              alongside comedy legends Margaret Cho, Janeane Garofalo, Andy
-              Kindler, Reggie Watts, Hannibal Buress and Marc Maron. He has been
-              named one of the “10 Funniest Canadians” by E! Network and chosen
-              as “Best Local Stand-up Comic” in NOW Magazine’s Readers Choice
-              poll. Gavin has been recently nominated for a Juno award, for his
-              latest Album “All Inclusive Coma” available on Howl & Roar
-              records. <br />
+              Gavin, born to working-class Afro-Caribbean parents in Markham,
+              navigates life through the lens of leftist politics. He uses humor
+              and critical insights to explore issues of race, identity, and
+              systemic inequity Being an outsider, Gavin has always seen the
+              need to express his views on social constructs and political
+              ideology in a easy to digest every man way. Gavin has performed at
+              Montreal’s Just for Laughs and Austin’s SXSW, was named one of the
+              "10 Funniest Canadians" by E! Network, and won NOW Magazine’s
+              “Best Local Stand-up Comic.” Recently, he earned a Juno nomination
+              for his album All Inclusive Coma, available on Howl & Roar
+              Records. <br />
               <br />
               When he’s not performing or hosting the comedic leftist podcast,
               Uncolonized, he can be found practicing his knitting or cheering
