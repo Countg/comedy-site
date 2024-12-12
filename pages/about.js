@@ -23,9 +23,9 @@ export default function About() {
             <hr />
             <p>
               Gavin, born to working-class Afro-Caribbean parents in Markham,
-              navigates life through the lens of leftist politics. He uses humor
-              and critical insights to explore issues of race, identity, and
-              systemic inequity Being an outsider, Gavin has always seen the
+              navigates life through the lens of philosophy. He uses humor and
+              critical insights to explore issues of identity, class, and
+              systemic inequity. Being an outsider, Gavin has always seen the
               need to express his views on social constructs and political
               ideology in a easy to digest every man way. Gavin has performed at
               Montreal’s Just for Laughs and Austin’s SXSW, was named one of the
