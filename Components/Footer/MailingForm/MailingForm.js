@@ -1,48 +1,64 @@
-import React from 'react';
+import { useState } from 'react';
 
-// a basic form
-export default function MailingForm({
-  status,
-  message,
-  className,
-  style,
-  onSubmitted,
-}) {
-  let input;
-  const submit = () =>
-    input &&
-    input.value.indexOf('@') > -1 &&
-    onSubmitted({
-      EMAIL: input.value,
-    });
+export default function MailingForm() {
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Validate email
+    if (!email.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)) {
+      setMessage('Please enter a valid email address.');
+      return;
+    }
+
+    try {
+      const res = await fetch('/api/hello', {
+        // Use the correct API path without the .js
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const result = await res.json();
+
+      if (res.ok) {
+        setMessage('Successfully subscribed!');
+        setEmail(''); // Clear input after success
+      } else {
+        setMessage(result.error || 'Something went wrong.');
+      }
+    } catch (error) {
+      setMessage('Network error, please try again later.');
+    }
+  };
 
   return (
-    <div className={className} style={style}>
+    <form onSubmit={handleSubmit}>
       <input
-        ref={(node) => (input = node)}
         type='email'
+        value={email}
         className='email-input'
-        placeholder='Your email goes here'
+        onChange={(e) => setEmail(e.target.value)}
+        required
       />
-
-      <button onClick={submit} className='mailchimp-button'>
-        SUBMIT
+      <button type='submit' className='mailchimp-button'>
+        Subscribe
       </button>
-      {status === 'sending' && (
-        <div style={{ color: '#09f7ea' }}>sending...</div>
-      )}
-      {status === 'error' && (
+
+      {message && (
         <div
-          style={{ color: 'orange' }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
+          style={{
+            color:
+              message === 'Successfully subscribed!' ? '#FF1493' : 'orange',
+            marginTop: '10px',
+          }}>
+          {message}
+        </div>
       )}
-      {status === 'success' && (
-        <div
-          style={{ color: '#FF1493' }}
-          dangerouslySetInnerHTML={{ __html: message }}
-        />
-      )}
-    </div>
+    </form>
   );
 }

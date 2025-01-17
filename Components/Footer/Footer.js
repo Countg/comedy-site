@@ -1,12 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
-import MailchimpSubscribe from 'react-mailchimp-subscribe';
+
 import MailingForm from './MailingForm/MailingForm';
 import { BsFacebook, BsInstagram, BsYoutube } from 'react-icons/bs';
 import { FiTwitter } from 'react-icons/fi';
-
-const url =
-  'https://gavinstephens.us2.list-manage.com/subscribe/post?u=1a54bfd268bc87972d3d7bf65&amp;id=5fb2430c5a';
 
 export default function Footer() {
   return (
@@ -14,18 +11,7 @@ export default function Footer() {
       <div className='footer-container'>
         <div className='mailing-list'>
           <h2>Join The Mailing List</h2>
-          <MailchimpSubscribe
-            url={url}
-            render={({ subscribe, status, message }) => (
-              <MailingForm
-                status={status}
-                message={message}
-                className='form'
-                style={{}}
-                onSubmitted={(formData) => subscribe(formData)}
-              />
-            )}
-          />
+          <MailingForm className='form' style={{}} />
         </div>
         <div className='contact-info'>
           <h2>CONTACT</h2>
