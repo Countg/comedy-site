@@ -22,7 +22,12 @@ export default function Lettering() {
             </div>
 
             <div className='on-hover-first animate-letters delay12'>
-              <a href='/uncolonized' className='pod-label'></a>
+              <Link
+                href='https://patreon.com/theuncolonized'
+                target='_blank'
+                title='Uncolonized Podcast'>
+                <div className='pod-label'></div>
+              </Link>
             </div>
 
             <div className='arrow animate-social delay13'>

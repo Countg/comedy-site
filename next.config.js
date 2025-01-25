@@ -1,14 +1,14 @@
-// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
 
-  // Place swcMinify inside the compiler object
-  compiler: {
-    // swcMinify: true, // Enable SWC minification
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.(mp4|webm|ogg|mov)$/,
+      type: 'asset/resource',
+    });
+    return config;
   },
-
-  // You can add any other configuration options here, if needed
 };
 
 export default nextConfig;

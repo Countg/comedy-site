@@ -44,7 +44,7 @@ const SmallNavigation = () => {
                 <h2 className='site-text'>BIO & PROMO PHOTOS.</h2>
               </a>
 
-              <a href='/uncolonized'>
+              <a href='http//:patreon.com/theuncolonized'>
                 <h2 className='pod-text'>
                   THE UNCOLONIZED <br></br>PODCAST.
                 </h2>

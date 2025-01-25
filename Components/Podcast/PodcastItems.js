@@ -14,9 +14,6 @@ export default function PodcastItems({ overlayToggle }) {
           <hr />
 
           <div className='pod-stuff'>
-            <div className='side-left col'>
-              <img src={ep.thumbnail} alt='podcast episode' />
-            </div>
             <div className='side-right'>
               <p>{ep.description}</p>
             </div>

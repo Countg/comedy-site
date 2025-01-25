@@ -51,7 +51,9 @@ export default function Navigation(props) {
             </Link>
 
             <li className='main-item yellow'>
-              <a href='/uncolonized'>UNCOLONIZED PODCAST</a>
+              <a href='http://patreon.com/theuncolonized' target='_blank'>
+                UNCOLONIZED PODCAST
+              </a>
             </li>
           </ul>
         </nav>
