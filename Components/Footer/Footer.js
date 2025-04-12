@@ -19,7 +19,7 @@ export default function Footer() {
           <p>For booking & inquires:</p>
           <div className='contact-contact'>
             <a
-              href='mailto:info@gavinstephens.ca?subject=Comedy%20Injury'
+              href='mailto:info@gavinstephens.ca?subject=Comedy%20Inquiry'
               target='_blank'>
               <p className='email-link'>info@gavinstephens.ca</p>
             </a>
